@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+:root {
+    --promary-color: #3d348b;
+    --secondary-color:#7678ed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Mynerve', cursive;
+    background-color: var(--promary-color);
+    color: #fff;
+    font-size: x-large;
+
+}
+.container{
+    max-width: 700px;
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar h3 {
+    margin: 20px;
+
+}
+.node-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+}
+form {
+    padding: 20px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: 0;
+}
+input[type="submit"]
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 0;
+    padding: 3px;
+}
+.node-list li {
+    list-style: none;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.empty {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+p {
+    font-size: 20px;
 }
